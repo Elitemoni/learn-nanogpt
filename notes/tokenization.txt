@@ -1,0 +1,5 @@
+this project uses single character tokenization
+
+most real use LLMs use multi char tokenization (sub-word unit)
+
+why does the tokenization character sizing matter?
