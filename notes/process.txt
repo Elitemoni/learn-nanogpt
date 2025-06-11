@@ -1,0 +1,6 @@
+1. have input data
+2. create vocabulary of data
+3. create integer encoding of data
+4. split input data into training data and validation data
+5. define block size (how many tokens to read up to at once)
+6. 
