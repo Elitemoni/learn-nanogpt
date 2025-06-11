@@ -6,3 +6,4 @@ https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/
 
 left on:
 10:13
+14:30

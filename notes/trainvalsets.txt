@@ -1,0 +1,6 @@
+train and validation sets help us to understand to what extent the model is overfitting
+
+what are training and validation sets used for?
+
+what is overfitting and how does it occur?
+

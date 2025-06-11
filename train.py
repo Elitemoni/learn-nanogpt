@@ -19,5 +19,15 @@ decode = lambda l: ''.join([itos[i] for i in l])
 
 #print(stoi)
 #print(itos)
-print(encode("hello world"))
-print(decode(encode("hello world")))
+#print(encode("hello world"))
+#print(decode(encode("hello world")))
+
+import torch
+data = torch.tensor(encode(text), dtype=torch.long)
+print(data.shape, data.dtype)
+print(data[:3])
+
+# Split the data into train and validation sets
+n = int(0.9 * len(data))  # 90% for training, 10% for validation
+train_data = data[:n]
+val_data = data[n:]

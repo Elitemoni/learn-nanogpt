@@ -3,3 +3,4 @@ this project uses single character tokenization
 most real use LLMs use multi char tokenization (sub-word unit)
 
 why does the tokenization character sizing matter?
+(why does vocab size matter, why does int length representation size matter, why does the tradeoff between both matter)
