@@ -48,14 +48,16 @@ torch.manual_seed(1337) # for reproducibility
 batch_size = 4 # how many independent sequences to process in parallel
 block_size = 8 # how many characters to read at once
 
-def get_batch(split: str) -> tuple[torch.Tensor, torch.Tensor]:
+def get_batch(split: str):
    # generate a small batch of data of inputs x and targets y
    data = train_data if split == 'train' else val_data
    ix = torch.randint(len(data) - block_size, (batch_size,))  # random starting indices
    x = torch.stack([data[i:i + block_size] for i in ix])  # input block
    y = torch.stack([data[i + 1:i + block_size + 1] for i in ix])  # target block
-   print(type(x, y))
+   # print(type(x, y))
    return x, y
+
+print('----')
 
 xb, yb = get_batch('train')
 print('inputs: ', xb.shape)
